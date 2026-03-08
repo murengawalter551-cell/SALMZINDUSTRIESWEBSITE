@@ -12,8 +12,8 @@ h3{
 }
 .slider {
   position: relative;
-  width: 600px;
-  height: 700px;
+  width: 800px;
+  height: 1000px;
   overflow: hidden;
   margin: 20px auto;
 }
@@ -159,8 +159,48 @@ main {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    position :left;
 }
 
 .comment-section button:hover {
     background-color: darkblue;
+}
+/* Light mode (default) */
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1e1e1e; /* Dark Gray */
+  color: #f0f0f0;            /* Light text for contrast */
+}
+
+/* Button styling */
+#modeButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #121212;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button styling in dark mode */
+body.dark-mode #modeButton {
+  background-color: #333;
+  color: #f0f0f0;
+}
+/* Hover effect for dark mode button */
+#modeButton:hover {
+    color: red;                  /* Text turns red on hover */
+    transition: color 0.3s ease; /* Smooth color change */
 }

@@ -13,6 +13,7 @@
                 <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="contact.html">contact</a></li>
+                <script src="script.js"></script>
             </ul>
         </nav>
     </header>
@@ -45,6 +46,21 @@
   <h2>Leave a Comment</h2>
   <textarea placeholder="What do you think about our products?"></textarea>
   <button>Submit</button>
+  <h2>Contact Us</h2>
+<form id="contactForm">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" placeholder="Your Name"><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" placeholder="Your Email"><br><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" placeholder="Your Message"></textarea><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<p id="response" style="color: green; font-weight: bold;"></p>
 </div>
 </body>
 </html>
